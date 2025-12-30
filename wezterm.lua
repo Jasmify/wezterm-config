@@ -15,8 +15,8 @@ local function is_macos() return wezterm.target_triple:find("apple") ~= nil end
 config.color_scheme = 'Tokyo Night'
 config.window_background_opacity = 0.8
 config.window_padding = { left = 8, right = 8, top = 8, bottom = 8 }
-config.initial_cols = 120
-config.initial_rows = 30
+config.initial_cols = 160
+config.initial_rows = 40
 config.scrollback_lines = 10000
 
 -- タブバー
@@ -35,7 +35,7 @@ config.font = wezterm.font_with_fallback {
     'Cica',
     is_windows() and 'MS Gothic' or nil, -- Windowsの時だけ追加
 }
-config.font_size = 14.0
+config.font_size = 18.0
 
 -- デフォルトシェルの設定
 if is_windows() then
